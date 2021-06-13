@@ -18,8 +18,8 @@ function initializeLiff(liffId) {
         });
 }
 
-function sendText(text, plan) {
-        sendMessages(text, plan);
+function sendText(text) {
+        sendMessages(text);
 }
 
 // LINEトーク画面上でメッセージ送信
