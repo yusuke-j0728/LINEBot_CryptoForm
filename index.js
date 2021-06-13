@@ -15,7 +15,7 @@ $(function () {
         var api_secret = $('input[name="api_secret"]').val();
         var frequency = $('input[name="frequency"]:checked').val();
         var msg = `${key}\nお名前：${username}\nEmail：${email}\nBTC積立額:${btc}\nETH積立額:${eth}\nXRP積立額:${xrp}\nXLM積立額:${xlm}\nAPI_KEY:${api_key}\nAPI_SECRET:${api_secret}\n積立タイミング：${frequency}`;
-        sendText(msg, plan);
+        sendText(msg);
 
         return false;
     });

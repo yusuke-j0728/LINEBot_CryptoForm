@@ -23,18 +23,18 @@ function sendText(text, plan) {
 }
 
 // LINEトーク画面上でメッセージ送信
-function sendMessages(text, plan) {
-    if (plan == 'undefined'){
-        returne;
-    } else if (plan == '100円プラン'){
-        var linkmessage = "リンクからお支払いを設定してください。\n https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-41E3830771397714GMCJ5GTI"
-    } else if (plan == '1,000円プラン'){
-        var linkmessage = "リンクからお支払いを設定してください。\n https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-45W435992M807325LMCHYRRI"
-    } else if (plan == '10,000円プラン'){
-        var linkmessage = "リンクからお支払いを設定してください。\n https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-2H011187SV385063BMCJ6QBY"
-    } else if (plan == 'その他'){
-        var linkmessage = "運営より別途支払いリンク先を送付いたします。"
-    }
+function sendMessages(text) {
+    // if (plan == 'undefined'){
+    //     returne;
+    // } else if (plan == '100円プラン'){
+    //     var linkmessage = "リンクからお支払いを設定してください。\n https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-41E3830771397714GMCJ5GTI"
+    // } else if (plan == '1,000円プラン'){
+    //     var linkmessage = "リンクからお支払いを設定してください。\n https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-45W435992M807325LMCHYRRI"
+    // } else if (plan == '10,000円プラン'){
+    //     var linkmessage = "リンクからお支払いを設定してください。\n https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-2H011187SV385063BMCJ6QBY"
+    // } else if (plan == 'その他'){
+    //     var linkmessage = "運営より別途支払いリンク先を送付いたします。"
+    // }
     
     liff.sendMessages([{
         'type': 'text',
