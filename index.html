@@ -1,0 +1,73 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お申込みフォーム</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+</head>
+
+<body>
+    <form class="w-75 mx-auto">
+
+        <p class="mt-3">以下にお申し込み内容を入力し、送信を押してください。</p>
+
+        <p class="mt-3">お名前</p>
+        <div>
+            <input class="form-control w-100 mt-1" name="username" maxlength="20" type="text" required>
+        </div>
+        <p class="mt-3">メールアドレス</p>
+        <div>
+            <input class="form-control w-100 mt-1" name="email" maxlength="50" type="email" required>
+        </div>
+        <p class="mt-3">１回あたりのBTC積立額（円で指定）</p>
+        <div>
+            <input class="form-control w-100 mt-1" name="btc" maxlength="50" type="number"> 
+        </div>
+        <p class="mt-3">１回あたりのETH積立額（円で指定）</p>
+        <div>
+            <input class="form-control w-100 mt-1" name="eth" maxlength="50" type="number"> 
+        </div>
+        <p class="mt-3">１回あたりのXRP積立額（円で指定）</p>
+        <div>
+            <input class="form-control w-100 mt-1" name="xrp" maxlength="50" type="number"> 
+        </div>
+        <p class="mt-3">１回あたりのXLM積立額（円で指定）</p>
+        <div>
+            <input class="form-control w-100 mt-1" name="xlm" maxlength="50" type="number"> 
+        </div>
+        <p class="mt-3">API_KEY</p>
+        <div>
+            <input class="form-control w-100 mt-1" name="api_key" maxlength="50" type="text" required> 
+        </div>
+        <p class="mt-3">API_SECRET</p>
+        <div>
+            <input class="form-control w-100 mt-1" name="api_secret" maxlength="50" type="text" required>  
+        </div>
+        <p class="mt-3">積立タイミング</p>
+        <div>
+            <input type="radio" id="daily" name="frequency" value="daily" required> 
+            <label for="plan1">日次</label> 
+        </div>
+        <div>
+            <input type="radio" id="weekly" name="frequency" value="weekly" required>
+            <label for="plan2">週次</label>
+        </div>
+        <div>
+            <input type="radio" id="monthly" name="frequency" value="monthly" required>
+            <label for="plan3">月次</label>
+        </div>
+        <input type="submit" class="mt-4 btn btn-primary" value="送信">
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
+    <script src="liff.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
